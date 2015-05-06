@@ -1,0 +1,548 @@
+
+body, html { overflow-x:hidden; }
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Microsoft YaHei",'微软雅黑','simsun', Helvetica, Arial;
+    font-style: normal; 
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, span, p { font-family:Arial,'simsun' ''"Microsoft YaHei",'微软雅黑' !important; }
+
+.blue { color: #6CF; }
+
+.green { color: #CF0; }
+
+h2 {
+	padding: 10px 0;
+
+}
+
+p {
+	padding: 10px 0;
+	text-align: justify;
+}
+
+a {
+	color: #FFF;
+
+}
+
+a:hover {
+	color: #2DBAE8;
+    text-decoration:none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; /* change if the mask should have another color then white */
+    z-index: 99; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../images/status.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/*general*/
+#main-wrapper {
+     overflow: hidden;
+}
+
+.xm-logo {
+	z-index: 1;
+}
+.xm-site-title { 
+    color: #fff !important; 
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+    font-family: Arial, "Microsoft YaHei", "微软雅黑";
+}
+
+.xm-site-title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.xm-site-title a:hover {
+	text-decoration: none;
+}
+
+
+img.slide {
+    width: 100%; 
+    z-index: -9999999; 
+    position: absolute;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    /* left: 703px; */
+    display: none;
+}
+
+.image-section {
+    position: fixed;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+}
+
+.xm-content {
+    position: static;
+    overflow: hidden; 
+    margin-top: 10%;
+    padding-bottom: 6%;
+}
+
+.black-bg {
+    background-color: rgba(0,0,0,0.4);
+}
+.black-bg:before, .black-bg:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.black-bg:after {
+    clear: both;
+}
+    .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.xm-content section {
+    font-family:  "Microsoft YaHei",'微软雅黑', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative; 
+    overflow: hidden;
+    top: 0; 
+    padding-bottom: 20px;
+}
+
+
+.xm-content-wrapper {
+    overflow:hidden;
+}
+
+.xm-content h2 {
+    color:#fff;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.xm-content p {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer {
+    overflow:hidden; 
+    position:fixed; 
+    bottom: 10px;
+}
+
+.footer-text {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color:rgba(255, 255, 255, 0.2); 
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.btn-menu {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+.btn-menu > .fa {
+    font-size: 50px;
+    margin: 20px 0;
+}
+.btn-menu > h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.change-section {
+    color: #fff;
+    text-decoration: none;
+}
+
+.change-section .black-bg {
+    transition: all 0.4s ease;
+}
+
+.change-section .black-bg > h2 {
+    transition: all 0.4s ease;
+}
+
+.change-section:hover {
+    text-decoration: none;
+    color: #246BB2;
+}
+
+.change-section:hover .black-bg {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.change-section:hover .black-bg > h2 {
+    color: #246BB2;
+}
+
+.change-section-pm {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.change-section-pm .black-bg {
+    transition: all 0.4s ease;
+}
+
+.change-section-pm.black-bg > h2 {
+    transition: all 0.4s ease;
+}
+
+.change-section-pm:hover {
+    text-decoration: none;
+    color: #246BB2;
+}
+
+
+.pm{
+  padding: 0px;
+}
+
+.pm:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.change-section-pm:hover .black-bg > h2 {
+    color: #246BB2;
+}
+
+
+@media (max-width: 991px) {
+    .footer {
+        overflow:hidden; 
+        position:static;
+        text-align: center;
+    }
+    
+    .footer-text {
+        margin-left: 0;  
+        color:rgba(255,255,255,0.5);
+    }
+}
+
+
+
+
+
+
+
+.change-section-a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.change-section-a .black-bg {
+    transition: all 0.4s ease;
+}
+
+.change-section-a .black-bg > h2 {
+    transition: all 0.4s ease;
+}
+
+.change-section-a:hover {
+    text-decoration: none;
+    color: #246BB2;
+}
+
+.change-section-a:hover .black-bg {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.change-section-a:hover .black-bg > h2 {
+    color: #246BB2;
+}
+
+
+
+
+
+
+
+#nametext
+{
+  font-size: 36px;
+  font-family: Arial, "Microsoft YaHei", "微软雅黑";
+  color: #fff;
+}
+
+
+
+
+
+.img-responsive-pm
+{
+
+   width: 100%;
+  height: auto;
+  margin: 1% 0 0 1%;
+}
+/****==========*/
+
+
+
+
+
+@font-face {
+  font-family:Arial, "Microsoft YaHei", "微软雅黑";
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font-family:Arial, "Microsoft YaHei", "微软雅黑";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+.fa-android:before {
+  content: url(../images/android.png);
+}
+.fa-apple:before {
+  content: url(../images/apple.png);
+}
+.fa-windows:before {
+  content: url(../images/windows.png);
+}
+.fa-about:before
+{
+  content: url(../images/aboutus.png);
+}
+.fa-signin:before
+{
+  content: url(../images/signin.png);
+}
+.fa-result:before
+{
+  content: url(../images/result.png);
+}
+.fa-web:before
+{
+  content: url(../images/web.png);
+}
+
+.fa-sm {
+  display: inline-block;
+  font-family:Arial, "Microsoft YaHei", "微软雅黑";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.btn-menu > .fa-sm {
+    font-size: 50px;
+    margin: 5px 0;
+}
+.btn-menu>h2
+{
+  font-family: "Microsoft YaHei";
+
+}
+
+.select
+{
+  font-size:15px;
+  font-family:Arial, "Microsoft YaHei";
+  color:white;
+}
+.font-ms
+{
+  font-family: "Microsoft YaHei";
+}
+.font-ms>h2
+{
+  font-family: "Microsoft YaHei";
+}
+
+
+.stunumber
+{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#respan
+{
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.load{
+    float:left;
+    color:#fff;
+    font-size:15px;
+}
+#coInfo{
+   
+  	font-size: 20px;
+  	font-family: "Microsoft YaHei";
+    color: #ffffff;
+    /*padding:20px;*/
+    z-index:5;
+    position:absolute;
+    width:100%;
+    top:140px;
+    background-color: rgba(0,0,0,0.8);
+    }
+#join{
+    z-index:1;
+}
+.fixed-size{
+    
+       
+    height:auto;
+    padding:20px;
+}
+.fixed-size p{
+	text-align: center;
+}
+#kang_die{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+	background-color: rgba(255,255,255,0.2);
+	display: none;
+}
+
+.btn-menu-pm{
+  padding: 0;
+  text-align: center;
+}
+.btn-menu-pm > .fa-sm {
+    font-size: 50px;
+    margin: 5px 0;
+}
+.btn-menu-pm>h2
+{
+  font-family: "Microsoft YaHei";
+
+}
+
+.btn-menu-pm > .fa {
+    font-size: 50px;
+    margin: 20px 0;
+}
+.btn-menu-pm > h2 {
+    margin: 0;
+    font-size: 18px;
+}
